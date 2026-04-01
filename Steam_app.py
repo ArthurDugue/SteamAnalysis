@@ -502,20 +502,20 @@ with solutionPage:
     st.markdown("Plusieurs axes peuvent être explorés pour améliorer cette situation.")
 
     st.title("L'union fait la force")
-    st.image(image="SteamAnalysis/PieceByPiece.PNG",
+    st.image(image="PieceByPiece.PNG",
              caption = "Le cas des deux jeux Piece by Piece. Les deux jeux portant un nom similaire sont sortis (quasiment) en même temps sur Steam. " \
              "Plutôt que d'en venir à des mesures juridiques, les deux studios ont décidé de créer un bundle contenant les deux jeux. ")
     st.markdown("Les jeux avec un prix abordable ont de meilleures chances d'être vendus donc les bundles sont une clé de voute pour booster les ventes.")
 
     st.title("Augmenter sa visibilité")
-    st.image(image = "SteamAnalysis/EarlyAccess.PNG",
+    st.image(image = "EarlyAccess.PNG",
              caption = "Beaucoup de jeux le font déjà mais la sortie en early access augmente le nombre de ventes à la sortie du jeu. Le bouche à oreille est" \
              "crucial.")
     st.markdown("Il ne faut pas sous-estimer l'impact des réseaux sociaux et le rôle des influenceurs pour la promotion d'un jeu. Et de tout faire pour apparaître dans" \
     " la wishlist (liste de souhaits) du plus grand nombre de joueurs. Steam met plus facilement en avant un projet ayant un grand nombre de wishlist.")
     
     st.title("Bien calculer son timing")
-    st.image(image="SteamAnalysis/Releases.PNG")
+    st.image(image="Releases.PNG")
     st.markdown("Pour la sortie d'un jeu indé, il vaut mieux viser des périodes où peu de grosses licences (AAA) sortent en même temps. " \
     "Il faut également cibler une sortie lors d'une période de discount de Steam comme les soldes de printemps où les sorties sont faibles mais les achats sont importants.")
 
