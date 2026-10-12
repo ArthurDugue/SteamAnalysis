@@ -452,17 +452,17 @@ with publiPage:
         xanchor="right")
 
     # Add a marker only on the peak year (2024).
+    last_year = int(games_per_year["Release Year"].max())
+
     release_line.add_scatter(
-        x=[2024],
-        y=[games_per_year.loc[games_per_year["Release Year"] == 2024, "Number of Games"].values[0]],
-        mode="markers",
-        marker=dict(
-            size=10,
-            color="#3b5bdb",
-            line=dict(width=2, color="white")
-        ),
-        showlegend=False
+    x=[last_year],
+    y=[games_per_year.loc[games_per_year["Release Year"] == last_year, "Number of Games"].iloc[0]],
+    mode="markers",
+    marker=dict(size=10, color="#3b5bdb", line=dict(width=2, color="white")),
+    showlegend=False
     )
+
+    release_line.update_xaxes(range=[2004, last_year + 0.07])
 
     release_line.add_annotation(
         x=2017.5,
