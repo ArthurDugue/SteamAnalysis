@@ -72,7 +72,7 @@ DATA_PATH = os.path.join(BASE_DIR, "data", "games.csv")
 df = pd.read_csv(DATA_PATH)
 
 df.columns = ['Estimated owners', 'Price', 'Windows',
-       'Mac', 'Linux', 'Average playtime forever', 'Publishers']
+       'Mac', 'Linux', 'Average playtime forever', 'Publishers', 'Positive', 'Negative']
     
 # Couleur de base (bleu)
 base_color = "#064979"
