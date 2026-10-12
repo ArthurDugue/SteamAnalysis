@@ -66,21 +66,15 @@ def lighten_color(hex_color, factor):
 ############################## /Functions ############################## 
 
 ######################## Setup ##############################
-path = kagglehub.dataset_download("fronkongames/steam-games-dataset")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "data", "games.csv")
 
-df = pd.read_csv(os.path.join(path, "games.csv"))
+df = pd.read_csv(DATA_PATH)
 
-df.columns = ['Name', 'Release date', 'Estimated owners', 'Peak CCU',
-       'Required age', 'Price', 'Discount', 'DLC count', 'About the game',
-       'Supported languages', 'Full audio languages', 'Reviews',
-       'Header image', 'Website', 'Support url', 'Support email', 'Windows',
-       'Mac', 'Linux', 'Metacritic score', 'Metacritic url', 'User score',
-       'Positive', 'Negative', 'Score rank', 'Achievements', 'Recommendations',
-       'Notes', 'Average playtime forever', 'Average playtime two weeks',
-       'Median playtime forever', 'Median playtime two weeks', 'Developers',
-       'Publishers', 'Categories', 'Genres', 'Tags', 'Screenshots', 'Movies']
-
-    # Couleur de base (bleu)
+df.columns = ['Estimated owners', 'Price', 'Windows',
+       'Mac', 'Linux', 'Average playtime forever', 'Publishers']
+    
+# Couleur de base (bleu)
 base_color = "#064979"
 
 ######################## /Setup ##############################
